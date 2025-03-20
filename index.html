@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>游戏争霸赛</title>
+		<link rel="stylesheet" href="css/main.css" />
+    	<script src="js/main.js"></script>
+	</head>
+	<body>
+		<script src="js/flower.js"></script>
+		<div class="all">
+			<div class="logo">
+				<img src="img/logo.png" />
+			</div>
+			<div class="title">
+				<!--<p class="timu"><font face="宋体" size="6">
+					<font size="7" color="blue"> 
+						<strong>游戏</strong> 
+					</font>争霸赛，你最喜欢谁？
+				</font></p> -->
+				<i align="right"> <font size="4">
+					<span>
+						<a href="denglu.html"> 登 录  </a>
+						<a href="zhuce.html"> | 注 册</a>
+					</span>
+				</font></i>
+				<img src="img/title.png"  align="left"/>
+			</div>
+			<p id="clock"></p>
+			<div class="choice"><!--导航-->
+				<a href="index.html"> <b>首  页</b> </a>
+				<a href="indexm.html"> <b>《和平精英》</b> </a>
+				<a href="indexle.html"> <b>《开心消消乐》</b> </a>
+				<a href="indextao.html"> <b>《桃园深处有人家》</b> </a>	
+			</div>
+			<!--滚动-->
+			<div class="out">
+			    <div class="inner">
+			        <div class="img">
+			         	<a href="indexm.html"><img src="img/c2.png" /></a>
+			        </div>
+			        <div class="img">
+			          	<a href="indexle.html"><img src="img/k2.jpg" /></a>
+			        </div>
+			        <div class="img">
+			          	<a href="indextao.html"><img src="img/t2.jpg" /></a>
+			        </div> 
+			    </div>
+			      	<div class="arrow">
+			        	<i class="left"> < </i>
+			       		<i class="right"> > </i>
+			      	</div>
+			</div>
+			<div class="pick">
+				<img src="img/pick.png" />
+			</div>
+			<!--旋转-->
+			<div class="imgs">
+				<a href="https://gp.qq.com/"><img src="img/c1.png" /></a>
+				<a href="http://qqbd.jiamianjia.com/qqyxdt/kxxxl/?qhclickid=a17538615293a911">
+					<img src="img/k1.png" /></a>
+				<a href="https://taoyuan.qq.com/"><img src="img/t1.png" /></a>
+			</div>
+			<!--头像加推荐内容，放大-->
+			<div class="talk">
+				<div class="p1">
+					<img src="img/p1.jpg"/>
+					<div class="p1p">
+						<p>
+							《绝地求生》进步最大的一点就是它的画面极为细腻，树叶和草丛的纹理，
+							枪械的纹理，水面的波纹，远景近景的转换，光影的特效，
+							人物与场景的互动等都更加丰富细腻，
+							更符合人眼的观感，更有真实感。给玩家的代入感更强烈。
+						</p>
+					</div>
+					<div class="zan1">
+						<img src="img/beforeZ .png" />
+					</div>
+				</div>
+				<script type="text/javascript">
+				const zan=document.querySelector('.zan1')
+				zan.addEventListener('click',function(){
+					zan.innerHTML=""
+					const zantu= document.createElement("img");
+				    zantu.src = "img/afterZ.png";
+					zan.appendChild(zantu);
+				})
+			</script>
+				<div class="p2">
+					<img src="img/p2.jpg" />
+					<div class="p2p">
+						<p>
+							《开心消消乐》是一款休闲三消游戏，由于游戏在画面上大量使用萌系小宠形象，
+							游戏在音乐方面也是十分贴合界面的欢快，会给玩家一种很休闲清新的感觉，
+							因此积攒了很多的玩家的喜爱。
+						</p>
+					</div>
+					<div class="zan2">
+						<img src="img/beforeZ .png" />
+					</div>
+				</div>
+				<script type="text/javascript">
+				const zan2=document.querySelector('.zan2')
+				zan2.addEventListener('click',function(){
+					zan2.innerHTML=""
+					const zantu= document.createElement("img");
+				    zantu.src = "img/afterZ.png";
+					zan2.appendChild(zantu);
+				})
+			</script>
+				<div class="p3">
+					<img src="img/p3.jpg" />
+					<div class="p3p">
+						<p>
+							《桃园深处有人家》回到心中的故乡，远离尘世，过一份安静恬淡的小生活。
+							在这里，有活泼淘气的妹妹陪伴在身边，有可爱神奇的萝卜山灵与玩家一同生活，
+							有迷失在幻境中寻求解忧的灵魂，还有那居住在山下似曾相识的故人们，
+							归来的人，终会发现最美的风景。
+						</p>
+					</div>
+					<div class="zan3">
+						<img src="img/beforeZ .png" />
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				const zan3=document.querySelector('.zan3')
+				zan3.addEventListener('click',function(){
+					zan3.innerHTML=""
+					const zantu= document.createElement("img");
+				    zantu.src = "img/afterZ.png";
+					zan3.appendChild(zantu);
+				})
+			</script>
+			<div class="di">
+				<img src="img/di.png" />
+			</div>
+		</div>
+		<!--广告-->
+		<div class="adR">
+			<div class="adR1">
+				<p class="close1"> <strong>×</strong>
+					|关闭</p>
+				<img src="img/c3.jpg" />
+			</div>
+			<script type="text/javascript">
+				//获取元素
+				const div1=document.querySelector('.adR1')
+				const close1=document.querySelector('.close1')
+				//绑定事件，事件侦听 注册事件（三要素）
+				close1.addEventListener('click',function(){
+					div1.style.display='none'
+				})
+			</script>
+			<div class="adR2">
+				<p class="close2"> <strong>×</strong>|关闭</p>
+				<img src="img/k3.jpg" />
+			</div>
+			<script type="text/javascript">
+				const div2=document.querySelector('.adR2')
+				const close2=document.querySelector('.close2')
+				close2.addEventListener('click',function(){
+					div2.style.display='none'
+				})
+			</script>
+			<div class="adR3">
+				<p class="close3"> <strong>×</strong>|关闭</p>
+				<img src="img/t3.jpg" />
+			</div>
+			<script type="text/javascript">
+				const div3=document.querySelector('.adR3')
+				const close3=document.querySelector('.close3')
+				close3.addEventListener('click',function(){
+					div3.style.display='none'
+				})
+			</script>
+		</div>
+		<!--用户信息-->
+		<div class="userXX">
+			<div class="u1">
+				<img src="img/p4.jpg" alt=""/>
+				<div class="u1t">
+					<strong>
+						组名：汪汪队<br /><br />
+						组长：张雨蒙<br /><br />
+						组员：赵慧圆、张梦 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;悦、杨舒雨
+					</strong>
+				</div>
+			</div>
+			<hr />
+			<div class="tp">
+				<div class="tp1">
+					<img src="img/c4.jpg" />
+					<button id="tp1a"> <img src="img/tp.png" /> </button>
+				</div>
+				<div class="tp2">
+					<img src="img/k4.jpg" />
+					<button id="tp2a"><img src="img/tp.png" /></button>
+				</div>
+				<div class="tp3">
+					<img src="img/t4.jpg" />
+					<button id="tp3a"><img src="img/tp.png" /></button>
+				</div>
+			</div>
+		</div>
+		<script>
+			let btn1 = document.getElementById("tp1a")
+			btn1.addEventListener("click",function(){
+				console.log(Cpiao)
+				Cpiao=Cpiao+1
+				console.log(Cpiao)
+				alert("投票成功,当前<和平精英>的票数是"+Cpiao+"票")
+			})
+		</script>
+		<script>
+			let btn2 = document.getElementById("tp2a")
+			btn2.addEventListener("click",function(){
+				console.log(Kpiao)
+				Kpiao=Kpiao+1
+				console.log(Kpiao)
+				alert("投票成功,当前<开心消消乐>的票数是"+Kpiao+"票")
+			})
+		</script>
+		<script>
+			let btn3 = document.getElementById("tp3a")
+			btn3.addEventListener("click",function(){
+				console.log(Tpiao)
+				Tpiao=Tpiao+1
+				console.log(Tpiao)
+				alert("投票成功,当前<桃园深处有人家>的票数是"+Tpiao+"票")
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,531 @@
+*{
+	/* 外边距为0 */
+	margin: 0;
+	/* 内边距为0 */
+	padding: 0;
+}
+body{
+	background-color: #c6d7a1;
+}
+
+.back-top{
+	position:sticky;
+	/*top属性实现定位*/
+	top: 800px;
+	height: 0px;
+	/*float将div脱离文档流这样不会占据文档流中的位置*/
+	float: right;
+	right: 50px;
+	
+}
+.back-top>a{
+	display: block;
+	width: 90px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 50px;
+	border-radius: 50px;
+	background: rgba(0,0,0,0.2);
+}
+.shou{
+	height: 177px;
+	width:100%;
+	background-color: #afc87b;	
+}
+/* logo图片 */
+.about-banner{
+	position: relative;
+	margin: 0 auto;
+	/*border: #8FBC8F solid 1px;*/
+}
+.about-banner img{
+	margin: 0 auto;
+	display: block;
+}
+.lo img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+/* 导航栏 */
+.header{
+	width: 100%;
+    height: 60px;
+	line-height: 60px;
+	background: ;
+	/* 设置阴影 */
+	box-shadow: 2px 3px 5px #ccc;
+}
+/* 导航内容区域 */
+.headerf{
+	width: 1000px;
+	/* 居中显示 */
+	margin: 0 auto;
+}
+/* logo图片 */
+.headerf img{
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 设置高度 */
+	height: 50px;
+	/* 9px的上侧外边距 */
+	margin-top: 9px;
+}
+/* 导航栏 */
+.headerf ul{
+	/* 右浮动 靠右对齐 */
+	float: right;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.headerf ul li{
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 100px的左侧外边距 */
+	margin-left: 200px;
+}
+/* 导航栏a标签 */
+.headerf ul li a{
+	/* 设置颜色 */
+	color: #000000;
+	/* 底部内边距设置为5px */
+	padding-bottom: 5px;
+}
+/* 设置class为active 下的a */
+.headerf ul .active a{
+	/* 设置颜色 */
+	color: #39461e;
+	/* 设置背景 */
+	border-bottom: 3px solid #050602;
+}
+/* 鼠标移入效果 */
+.headerf ul li a:hover{
+	/* 设置颜色 */
+	color: #576b2e;
+	/* 设置背景 */
+	border-bottom: 3px solid #39461e;
+}
+/* 轮播图 */
+.swiper {
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 1200px;
+	/* 设置高度 */
+	height: 500px;
+	/* 上外边距20px 左右居中 下外边距为20 */
+	margin: 15px auto;
+	/* 超出隐藏不显示 */
+	overflow: hidden;
+}
+.wrap {
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+	/* 居中显示 */
+	margin: auto;
+	/* 超出隐藏不显示 */
+	overflow: hidden;
+}
+
+.warp ul {
+	/* 绝对定位 */
+	position: absolute;
+}
+
+.wrap ul li {
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+}
+
+.wrap ul li img {
+	/* 设置图片长度 */
+	width: 100%;
+	/* 设置图片高度 */
+	height: 500px;
+	/* 图片超出大小自动延展 防止压缩 */
+	object-fit: cover;
+	/* 设置3px的圆形弧度 */
+	border-radius: 3px;
+}
+/* 底部下标 */
+.wrap ol {
+	/* 绝对定位 */
+	position: absolute;
+	/* 靠.wrap右侧5% */
+	right: 5%;
+	/* 靠.wrap底部20px */
+	bottom: 5px;
+}
+
+.wrap ol li {
+	/* 去除默认属性 */
+	list-style: none;
+	height: 10px;
+	width: 10px;
+	border: 5px solid  darkseagreen;
+	/* 设置50%的圆弧 */
+	border-radius: 50%;
+    margin-left: 12px;
+	/* 左浮动 */
+	float: left;
+	/* 鼠标移上去 */
+	cursor: pointer;
+	/* 字体为0 隐藏文字 */
+	font-size: 0px;
+}
+
+.wrap ol .on {
+	/* 选中的背景 */
+	background: darkslategrey;
+}
+.img-list ul{
+	/* flex布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距为30px 左右居中 */
+	margin: 30px auto;
+}
+/* 小盒子样式 */
+.img-list ul li{
+	/* 鼠标移入出现触手 */
+	cursor: pointer;
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 18%;
+	/* 设置高度 */
+	height: 216px;
+	/* 设置圆弧度 */
+	border-radius: 100%;
+	/* 超出隐藏 */
+	overflow: hidden;
+	/* 设置阴影 */
+	box-shadow: 2px 3px 5px #f2dccb;
+}
+.img-list ul li img{
+	/* 设置成块级元素 */
+	display: block;
+	width: 100%;
+	height: 100%;
+	/* 图片自适应裁剪 */
+	object-fit: cover;
+	/* 动画效果执行时间 */
+	transition: all 0.3s;
+	opacity: 0.8;
+}
+/* 文字描述 */
+.img-list ul li h3{
+	/* 设置绝对定位 */
+	position: absolute;
+	/* 距离父级上侧0 */
+	top: 0;
+	/* 距离父级左侧0 */
+	left: 0;
+	width: 100%;
+    text-align: center;
+    height: 216px;
+    line-height: 216px;
+	color: #4e6831;
+    font-size: 24px;
+    font-weight: normal;
+	/* 文字间距 */
+	letter-spacing: 3px;
+}
+/* 鼠标移入效果 */
+.img-list ul li:hover img{
+	/* 逆时针旋转360deg */
+	transform: rotate(-360deg);
+	opacity: 1;
+}
+.about{
+	/* 弹性布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	width: 1200px;
+	/* 居中显示 */
+	margin: auto;
+	background: #FFFFFF;
+	/* 阴影 */
+	box-shadow: 3px 5px 10px #4e6831;
+}
+.about img{
+	width: 550px;
+	height: 100%;
+	/* 防止图片压缩 */
+	object-fit: cover;
+}
+.about video{
+	width: 650px;
+	height: 100%;
+}
+.about{
+	background-image: url(../img/ground1.png);
+	background-repeat:no-repeat;
+	background-position: bottom;
+}
+.about-text{
+	width: 590px;
+	/* 上下左右内边距为20 */
+	padding: 20px;
+}
+.about-text h2{
+font-size: 24px;
+	color: #333333;
+	font-weight: normal;
+	/* 文字间距 */
+	letter-spacing: 2px;
+	/* 下外边距为15px */
+	margin-bottom: 15px;
+	/*字体阴影*/
+	text-shadow: 2px 2px 5px #4E6831;
+}
+.about-text p{
+	/* 设置行高 */
+	line-height: 2.6;
+	/*首行缩进*/
+	text-indent: 50px;
+}
+.about-text a{
+	/* 设置成块级元素 单独一行显示 */
+	display: block;
+	background: #C6D7A1;
+    font-size: 14px;
+	color: #2F4F4F;
+	width: 100px;
+	height: 40px;
+	/* 设置行高 */
+	line-height: 40px;
+	/* 文字居中 */
+	text-align: center;
+	/* 上侧外边距为10 */
+	margin-top: 20px;
+	/* 圆弧为6px */
+	border-radius: 6px;
+}
+.text{
+	/* 弹性布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距50 左右居中 */
+	margin: 50px auto;
+}
+.text-list{
+	/* 鼠标移入触手 */
+	cursor: pointer;
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 两端对齐 */
+	justify-content: space-between;
+	width: 30%;
+	/* 上下左右内边距为 10 */
+	padding: 10px;
+	background: #FFFFFF;
+	/* 盒子阴影 */
+	box-shadow: 2px 1px 10px #CCC;
+	/* 动画时间 */
+	transition: all 0.3s;
+}
+.text-list:hover{
+	transform: translateY(-20px);
+}
+.text .text-list .list-img{
+	width: 100%;
+}
+.text .text-list .list-img img{
+	width: 100%;
+	height: 220px;
+	/* 防止图片变形 */
+	object-fit: cover;
+}
+.text .text-list .list-text{
+	width: 100%;
+}
+.text .text-list .list-text h3{
+	/* 上下外边距为5 左右为0 */
+	margin: 5px 0;
+	color: #333;
+}
+.text .text-list .list-text p{
+	line-height: 1.6;
+	/* 设置字体大小 */
+	font-size: 15px;
+	/* 设置字体颜色 */
+	color: #777777;
+}
+.img{
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距50px 左右居中 */
+	margin: 10px auto;
+}
+.img ul{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 子元素横向两端对齐 */
+	justify-content: space-between;
+}
+.img ul li {
+	list-style: none;
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 280px;
+	/* 设置高度 */
+	height: 220px;
+	/* 下侧外边距为20px */
+	margin-bottom: 20px;
+}
+.a{
+	background-color: #C6D7A1;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 150px;
+	width: 1200px;
+    border: 5px double olivedrab;
+}
+.a{
+	margin-bottom: 20px;
+}
+.a ul li{
+	margin-left:5px;
+	text-align: inherit;
+	list-style-type: disc;
+	list-style-position: inside;
+	font-family: "楷体";
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	line-height: 30px;
+	
+}
+.a p{
+	margin-top:5px;
+	text-align: center;
+	font-family: "楷体";
+	font-size: x-large;
+
+}
+
+.story{
+	text-align: center;
+	height: 30px;
+	font-family: "楷体";
+	font-weight: 100;
+}
+.img img{
+	position: relative;
+	display: block;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+	/* 防止图片变形 */
+	object-fit: cover;
+}
+.img-group{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+	/* 防止图片变形 */
+	object-fit: cover;
+    position: relative;
+	display: inline-block;
+}
+.img-group::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0,0,0,0.5);
+	opacity: 0.3;
+	transition: opacity 0.3s ease;
+}
+.img-group p{
+	/* 绝对定位 */
+	position: absolute;
+	top: 91%;
+	left: 50%;
+	/* 设置字体颜色 */
+	color: #FFFFFF;
+	font-family: "楷体";
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-weight: 100;
+	width: 100%;
+	height: 40px;
+	font-size: 24px;
+	color: wheat;
+	opacity: 0;
+	/* 设置背景颜色*/
+	background-color: rgba(0,0,0,0.6);
+	transition: opacity 0.3s ease;
+	
+}
+
+.img-group:hover::after{
+	opacity: 0;
+}
+.img-group:hover p{
+	opacity: 1;
+}
+.cord{
+	margin: 0 auto;
+	text-align: start;
+	margin: 10px 30px;
+	font-family: "楷体";
+	font-size: 24px;
+	/* 换行处理 */
+	flex-wrap: wrap;
+    border-style: dotted;
+    border-color: #2F4F4F;
+
+}
+.footer{
+	height: 35px;
+	/* 设置长度 */
+	width: 100%;
+	/* 上下内边距10 左右0 */
+	padding: 10px 0;
+	/* 字体颜色 */
+	color: #000000;
+	/* 背景颜色 */
+	background: #4E6831;
+	/* 文字居中 */
+	text-align: center;
+	
+}
+.footer p{
+	/*粗体*/
+	font-weight: bold;
+	font-family: "宋体";
+	font-size: 19px;
+}

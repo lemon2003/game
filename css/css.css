@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 1000px;
+	margin: 0 auto;
+	font-size: 14px;
+	background: #fff;
+	text-align: justify;
+	color: #010000;
+	position: relative;
+}
+
+h1,
+h2,
+h3 {
+	/*字体粗细*/
+	font-weight: 500;
+}
+
+img {
+	border: none;
+}
+
+a {
+	/*cursor光标pointer指针*/
+	cursor: pointer;
+	color: #333;
+	text-decoration: none;
+	outline: none; 
+	/*轮廓的属性*/
+}
+
+ul {
+	list-style-type: none;
+	/*统一定义列表项的符号*/
+}
+
+
+.lt {
+	float: left;
+}
+/*.lt,.rt图片靠左靠右*/
+.rt {
+	float: right;
+}
+
+
+.clearfix::after {
+	content: "";
+	display: block;
+	/*block独占一行自动填满*/
+	clear: both;
+	/*清除浮动*/
+}
+.clearfix{
+	position: relative;
+}
+
+/*wrapin 主体容器宽度*/
+.wrapin {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*公用CSS 开始*/
+
+/*header 开始*/
+header {
+	background: #cf2212;
+	line-height: 60px;
+	padding: 0 15px;
+}
+
+header .logo {
+	float: left;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 60px;
+	position: absolute;
+	left: 58px;
+}
+.logo1 img{
+	width: 100px;
+	height: 90px;
+	position: absolute;
+	left: -50px;
+	top: 2px;
+}
+header .nav {
+	float: right;
+}
+
+header .nav li {
+	width: 120px;
+	text-align: center;
+	font-size: 16px;
+	display: inline-block;
+}
+
+header .nav li a {
+	color: #fff;
+}
+
+.banner {
+	display: block;
+}
+
+.banner video {
+	display: block;
+	width: 100%;
+}
+.banner img {
+	display: block;
+	width: 100%;
+}
+
+.in_com {
+	background: #f4f8ff;
+	padding: 15px;
+	display: block;
+}
+
+.con_top .pic {
+	width: 300px;
+	float: left;
+}
+
+.con_top .pic img {
+	width: 100%;
+}
+
+.con_top .text {
+	float: right;
+	width: 650px;
+	line-height: 28px;
+	color: #333;
+}
+
+.title {
+	background: #598bd2;
+	line-height: 40px;
+	padding: 0 15px;
+	margin: 20px 0;
+}
+
+.title h2 {
+	font-size: 20px;
+	color: #fff;
+}
+
+.text_a {
+	line-height: 28px;
+	color: #333;
+}
+
+.text_a img {
+	margin-left: 15px;
+}
+.text_a video{
+	width: 100%;
+}
+
+footer {
+	background: #cf2212;
+	line-height: 60px;
+	padding: 0 15px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+
+.pic_con li img {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+}
+
+.zhangai_box li {
+	position: relative;
+	height: 260px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #ccc;
+	/*dashed虚线*/
+	margin-bottom: 15px;
+}
+
+.zhangai_box li .pic {
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.zhangai_box li .pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.zhangai_box li .text {
+	margin-left: 280px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #333;
+}
+
+body {
+	background: url(../img/微信图片_20231222160519.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.logo1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.a {
+	width: 600px;
+	margin:0 200px 30px;
+}
+
+.a li {
+	width:200px;
+	height:220px;
+	float: left;
+	1ist-style: none;
+	/*不使用项目符号*/
+}
+
+.a li img {
+	width: 200px;
+	height: 219px;
+	box-shadow: 0 0 10px #0000001a;
+	transition: transform all ease .5s;
+	/*transition：运动样式 持续时间 运动形式 延迟时间；*/
+}
+
+.a li img:hover {
+	transform: scale(2);
+	box-shadow:0 0 10px #0000001a;
+}
+.nav{
+    display: flex;
+    /*弹性布局提供最大的灵活性*/
+    justify-content: center;
+}
+.button,.portrait{
+    background-color: rgb(129, 172, 203);
+    width: 170px;
+    height: 65px;
+    text-align: center;
+   line-height: 65px;
+   transition: .3s;
+   cursor: pointer;
+   /*将光标呈现为指示链接的指针一只手*/
+   font-size: 25px;
+}
+.portrait::before{
+    content: '';
+    /*添加文本内容*/
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /*呈现圆形效果*/
+    transform: translate(30px,-30px);
+    /*x轴移动的坐标，y轴移动的坐标*/
+    background-image: url(../img/微信图片_20231222204529.jpg);
+    background-size: cover;
+    /*让背景图像充满整个背景，对图片进行裁剪之至填充整个元素*/
+    border: 10px solid #fff;		
+}
+
+.portrait:hover .information{
+    opacity: 1;
+    /*指定一个数值决定透明度，1完全不透明完全可见*/
+    line-height: 65px;
+    transform: translate(-20px,-10px);
+    height: auto;
+}
+.information {
+    width: 220px;
+    background-color: #78d1d2;
+    transform: translate(-20px, -200px);
+    border-radius: 10px;
+    /*将元素的每个圆角的水平半径和垂直半径都设置为10px*/
+    padding: 20px 0;/*内边距*/
+    line-height: 0;/*行高*/
+    height: 0;
+    transition: .3s;
+    /*动画过度时间*/
+    opacity: 0;/*完全透明*/
+}
+
+.button:hover {
+    background-color: rgb(217, 228, 138);
+    /*鼠标经过时背景的颜色*/
+}
+
+	
